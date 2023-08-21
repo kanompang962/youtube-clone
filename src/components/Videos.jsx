@@ -4,7 +4,7 @@ import VideoCard from "./VideoCard";
 import ChannelCard from "./ChannelCard";
 
 const Videos = ({ videos, direction }) => {
-  // console.log(videos);
+  // console.log("video.jsx ==> " + videos);
   if (!videos.length) return "Loading...";
 
   return (

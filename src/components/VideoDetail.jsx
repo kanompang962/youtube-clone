@@ -17,16 +17,16 @@ const VideoDetail = () => {
       setvideo(response.items[0])
     );
     // fetch video list
-    fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`).then(
-      (response) => setvideoList(response.items)
-    );
+    // fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`).then(
+    //   (response) => console.log(response)
+    // );
   }, [id]);
 
   if (!video?.snippet) {
     return "Loading...";
   }
 
-  console.log(video);
+  // console.log("id -" + id);
 
   return (
     <Box minHeight="95vh">
